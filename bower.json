@@ -1,0 +1,21 @@
+{
+  "name": "www",
+  "homepage": "https://github.com/ellifazsiqueira/site-daniel-filho",
+  "authors": [
+    "Ellifaz Siqueira <ellifaz.elf@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
