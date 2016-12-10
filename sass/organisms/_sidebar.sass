@@ -1,0 +1,133 @@
+.corpo
+    margin: 0
+    height: 1320px
+    background: $corfundo
+    .profile-sidebar
+        height: 100%
+        padding: 60px 0 10px 0
+        background: $corsidebar
+        .profile-userpic img
+            float: none
+            margin: 0 auto
+            width: 45%
+            height: 45%
+            -webkit-border-radius: 50% !important;
+            -moz-border-radius: 50% !important;
+            border-radius: 50% !important;
+        .profile-usertitle
+            text-align: center
+            margin-top: 20px
+            .profile-usertitle-name
+                color: #FFFFFF
+                font-size: 16px
+                font-weight: $bold
+                margin-bottom: 20px
+            .profile-usertitle-job
+                color: $corbranco
+                font-size: 14px
+                font-weight: $regular
+                margin-bottom: 20px
+        .profile-social
+            text-align: center
+            padding-bottom: 50px
+            border-bottom: 1px solid #292f33;
+            img
+                margin: 0 5px
+        .profile-usermenu
+            margin: 45px 0 0 20px
+            .nav
+                margin: 20px 0 20px 20px
+            ul, li, a
+                color: $cormenusecundario
+                font-size: 14px
+                font-weight: $regular
+            .maintitle-trabalho
+                span
+                    text-transform: uppercase
+                    padding-left: 10px
+                    color: $cormenutrabalhos
+                    font-size: 14px
+                    font-weight: $bold
+            .maintitle-informacoes
+                span
+                    text-transform: uppercase
+                    padding-left: 10px
+                    color: $cormenuinformacoes
+                    font-size: 14px
+                    font-weight: $bold
+            .maintitle-contato
+                span
+                    text-transform: uppercase
+                    padding-left: 10px
+                    color: $cormenucontato
+                    font-size: 14px
+                    font-weight: $bold
+        .profile-footer
+            text-align: center
+            margin-bottom: 20px
+            
+$grid-gutter-width: 1.5rem;
+$grid-columns: 12;
+
+
+/* Mixins */
+
+@mixin make-container($gutter: $grid-gutter-width)
+  margin-right: auto
+  margin-left: auto
+  padding-left:  ($gutter / 2)
+  padding-right: ($gutter / 2)
+
+// Creates a wrapper for a series of columns
+@mixin make-row($gutter: $grid-gutter-width)
+  margin-left:  ($gutter / -2)
+  margin-right: ($gutter / -2)
+
+@mixin make-col($gutter: $grid-gutter-width)
+  position: relative
+  float: left
+  min-height: 1px
+  padding-left:  ($gutter / 2)
+  padding-right: ($gutter / 2)
+
+@mixin make-col-span($columns)
+  width: percentage(($columns / $grid-columns))
+@mixin make-col-offset($columns)
+  margin-left: percentage(($columns / $grid-columns))
+@mixin make-col-push($columns)
+  left: percentage(($columns / $grid-columns))
+@mixin make-col-pull($columns)
+  right: percentage(($columns / $grid-columns))
+
+.container 
+  @include make-container()
+
+.row
+  @include make-row()
+
+.content-sidebar 
+  @include make-col()
+
+  @media (max-width: 32em)
+    @include make-col-span(4)
+
+  @media (min-width: 32.1em)
+    @include make-col-span(3)
+
+.content-main 
+  @include make-col()
+
+  @media (max-width: 32em)
+    @include make-col-span(4)
+
+  @media (min-width: 32.1em)
+    @include make-col-span(4)
+
+.content-secondary
+  @include make-col()
+
+  @media (max-width: 32em)
+    @include make-col-span(4)
+
+  @media (min-width: 32.1em)
+    @include make-col-span(5)

@@ -3,65 +3,149 @@
 <head>
     <meta charset="UTF-8">
     <title>Daniel Filho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/plugins.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <div class="row profile">
+        <div class="row corpo">
             <div class="col-md-3">
                 <div class="profile-sidebar">
-                    <!-- SIDEBAR USERPIC -->
+                    <!-- Foto Avatar -->
                     <div class="profile-userpic">
-                        <img src="images/imagens/daniel.png" class="img-responsive" alt="">
+                        <img src="images/imagens/daniel.png" alt="Daniel Filho" class="img-responsive">
                     </div>
-                    <!-- END SIDEBAR USERPIC -->
-                    <!-- SIDEBAR USER TITLE -->
+                    <!-- Sidebar Informações -->
                     <div class="profile-usertitle">
                         <div class="profile-usertitle-name">
                             Daniel Filho
                         </div>
                         <div class="profile-usertitle-job">
-                            Fotografo de Alto Rendimento
-                            <br>Asa Norte, Brasilia - DF
+                            Fotógrafo de Alto Rendimento<br>
+                            Asa Norte, Brasilia - DF<br>
+                            (61) 8245-7076
                         </div>
                     </div>
-                    <!-- END SIDEBAR USER TITLE -->
-                    <!-- SIDEBAR BUTTONS -->
-                    <div class="profile-userbuttons">
-                        <img src="images/icones/dribble.png" alt="dribble">
-                        <img src="images/icones/twitter.png" alt="twitter">
-                        <img src="images/icones/google.png" alt="google +">
-                        <img src="images/icones/facebook.png" alt="facebook">
+                    <!-- Sidebar Redes Sociais -->
+                    <!-- TODO: Pegar os links das redes sociais -->
+                    <div class="profile-social">
+                        <a href="#"><img src="images/icones/facebook.png" alt=""></a>
+                        <a href="#"><img src="images/icones/google.png" alt=""></a>
+                        <a href="#"><img src="images/icones/instagram.png" alt=""></a>
+                        <a href="#"><img src="images/icones/behance.png" alt=""></a>
                     </div>
-                    <!-- END SIDEBAR BUTTONS -->
-                    <!-- SIDEBAR MENU -->
+                    <!-- Sidebar Menu -->
                     <div class="profile-usermenu">
+                        <!-- Menu Trabalhos -->
+                        <div class="maintitle-trabalho">
+                                <img src="images/icones/trabalho.png" alt="">
+                                <span>Trabalhos</span>
+                        </div>
+                        <!-- Menu Trabalhos -->
                         <ul class="nav">
-                            <li class="active">
-                                <a href="#">
-                                <i class="glyphicon glyphicon-home"></i>
-                                Trabalhos </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                <i class="glyphicon glyphicon-user"></i>
-                                Informações </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank">
-                                <i class="glyphicon glyphicon-ok"></i>
-                                Contato </a>
-                            </li>
+                            <li><a href="index.html">Últimos</a></li>
+                            <li><a href="pages/trabalhos/eventos.html">Eventos</a></li>
+                            <li><a href="pages/trabalhos/casamentos.html">Casamentos</a></li>
+                            <li><a href="pages/trabalhos/infantis.html">Infantis</a></li>
+                            <li><a href="pages/trabalhos/balleteteatro.html">Ballet e Teatro</a></li>
+                            <li><a href="pages/trabalhos/hobby.html">Hobby</a></li>
+                        </ul>
+                        <!-- Menu Informações -->
+                        <div class="maintitle-informacoes">
+                                <img src="images/icones/about.png" alt="">
+                                <span>Informações</span>
+                        </div>
+                        <ul class="nav">
+                            <li><a href="pages/informacoes/habilidades.html">Habilidades</a></li>
+                            <li><a href="pages/informacoes/experiencia.html">Experiência</a></li>
+                            <li><a href="pages/informacoes/educacao.html">Educação</a></li>
+                            <li><a href="pages/informacoes/clientes.html">Clientes</a></li>
+                            <li><a href="pages/informacoes/depoimentos.html">Depoimentos</a></li>
+                            <li><a href="pages/informacoes/blog.html">Blog</a></li>
+                        </ul>
+                        <!-- Menu Contatos -->
+                        <div class="maintitle-contato">
+                                <img src="images/icones/contato.png" alt="">
+                                <span>Contato</span>
+                        </div>
+                        <ul class="nav">
+                            <li><a href="pages/contatos/endereco.html">Endereço</a></li>
+                            <li><a href="pages/contatos/telefone.html">Telefone</a></li>
+                            <li><a href="pages/contatos/social.html">Redes Sociais</a></li>
+                            <li><a href="pages/contatos/email.html">Email</a></li>
                         </ul>
                     </div>
-                    <!-- END MENU -->
+                    <div class="profile-footer">
+                        <a href="http://grupoelftech.com.br" ><img src="images/imagens/elf-logo-1.png" alt="" width="20%"><br>
+                        Desenvolvido por ELF Tech</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="timeline">
+                    <div class="conteudo-topo">
+                        <div class="dot">
+                            <img src="images/icones/dot.png" alt="">
+                        </div>
+                        <div class="data">
+                            <h4>10 Dez 2016</h4>
+                        </div>
+                        <div class="descricao">
+                            <p>Foto tirada durante a apresentação da Companhia Nacional de Ballet durante apresentação unica no Teatro Nacional.</p>
+                            <span class="cliente">
+                                Cliente: <a href="#">Companhia Nacional de Teatro</a><br>
+                                Tags: <a href="index.html">Fotografia</a>, <a href="pages/trabalhos/balleteteatro.html">Ballet</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="dot">
+                            <img src="images/icones/dot.png" alt="">
+                        </div>
+                        <div class="data">
+                            <h4>2 Dez 2016</h4>
+                        </div>
+                        <div class="descricao">
+                            <p>Foto do garoto João, tirada durante a apresentaçao da companhia de teatro Pequeninos do Picadeiro no Teatro Nacional.</p>
+                            <span class="cliente">
+                                Cliente: <a href="#">João Souza</a><br>
+                                Tags: <a href="index.html">Fotografia</a>, <a href="pages/trabalhos/balleteteatro.html">Ballet</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="conteudo">
+                        <div class="dot">
+                            <img src="images/icones/dot.png" alt="">
+                        </div>
+                        <div class="data">
+                            <h4>10 Nov 2016</h4>
+                        </div>
+                        <div class="descricao">
+                            <p>Belissima foto tirada do vidro do meu carro durante uma viagem. Perfeita para ser usada &nbsp; em trabalhos de edição ou como Wallpaper.</p>
+                            <span class="cliente">
+                                Cliente: <a href="#">Indefinido</a><br>
+                                Tags: <a href="index.html">Fotografia</a>, <a href="pages/trabalhos/hobby.html">Hobby</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="fotos">
+                    <div class="fotografia-topo">
+                        <img src="images/imagens/ballet.png" alt="">
+                    </div>
+                    <div class="fotografia">
+                        <img src="images/imagens/teatro.png" alt="">
+                    </div>
+                    <div class="fotografia">
+                        <img src="images/imagens/chuva.png" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <center>
-    <strong>Desenvolvido por <a href="http://elftech.com.br" target="_blank">ELF Tech</a></strong>
-    </center>
-    <br>
-    <br>
 </body>
 </html>

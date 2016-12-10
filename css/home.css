@@ -3,3 +3,64 @@
 /* ======== Outros */
 /* ======== Background Color Opacity */
 /* ======== Columns */
+.timeline {
+  background-image: url(../images/imagens/fundodescricao.png);
+  background-repeat: repeat-x;
+  height: 1320px;
+  width: 340px; }
+  .timeline .conteudo-topo {
+    margin-left: 17px;
+    padding-top: 20px; }
+    .timeline .conteudo-topo .dot {
+      display: block;
+      float: left; }
+    .timeline .conteudo-topo .data {
+      display: block; }
+      .timeline .conteudo-topo .data h4 {
+        margin-top: 2px;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #11171c; }
+    .timeline .conteudo-topo .descricao {
+      display: block;
+      margin-left: 30px;
+      color: #5e5e5e;
+      font-size: 14px; }
+      .timeline .conteudo-topo .descricao .cliente {
+        font-weight: 700;
+        text-decoration: none; }
+        .timeline .conteudo-topo .descricao .cliente a {
+          color: #5e5e5e; }
+  .timeline .conteudo {
+    margin-left: 17px;
+    padding-top: 295px; }
+    .timeline .conteudo .dot {
+      display: block;
+      float: left; }
+    .timeline .conteudo .data {
+      display: block; }
+      .timeline .conteudo .data h4 {
+        margin-top: 2px;
+        margin-left: 30px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #11171c; }
+    .timeline .conteudo .descricao {
+      display: block;
+      margin-left: 30px;
+      color: #5e5e5e;
+      font-size: 14px; }
+      .timeline .conteudo .descricao .cliente {
+        font-weight: 700;
+        text-decoration: none; }
+        .timeline .conteudo .descricao .cliente a {
+          color: #5e5e5e; }
+
+.fotografia-topo {
+  margin-left: 20px;
+  margin-top: 25px; }
+
+.fotografia {
+  margin-left: 20px;
+  margin-top: 25px; }
