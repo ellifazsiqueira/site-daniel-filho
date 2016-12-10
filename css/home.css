@@ -64,3 +64,8 @@
 .fotografia {
   margin-left: 20px;
   margin-top: 25px; }
+  .fotografia .carregando {
+    font-size: 14px;
+    font-weight: 700;
+    color: #a0a2a4;
+    padding-left: 10px; }
